@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campanha para Jonatan - Ajude-o a Viver com Dignidade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Added animation for progress bar */
+    @keyframes fillProgress {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 31%;
+      }
+    }
+
+    .animate-progress {
+      animation: fillProgress 2s ease-out forwards;
+    }
+
+    /* Added smooth fade-in for sticky button */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.3s ease-out;
+    }
+  </style>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '887991306910518');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=887991306910518&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="hidden sm:flex items-center gap-2 text-gray-700 hover:text-gray-900">
+          <i class="fas fa-search"></i>
+        </button>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+          Criar Campanha
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+
+    <!-- Breadcrumb -->
+    <div class="mb-4 text-sm text-blue-600">
+      Campanha para Jonatan
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- Left Column - Main Content -->
+      <div class="lg:col-span-2 space-y-6">
+
+        <!-- Title Section -->
+        <div>
+          <p class="text-sm text-gray-600 mb-2 uppercase tracking-wide">CAMPANHA DE ARRECADAÇÃO DE FUNDOS PARA DOAÇÕES
+          </p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-balance">
+            💪 Jonatan, 34 anos — Trabalha rastejando para não desistir da vida.
+          </h1>
+          <p class="text-base sm:text-lg text-gray-700 mb-2">
+            NECESSITA DE PRÓTESES, CADEIRA DE RODAS ADEQUADA E APARELHOS AUDITIVOS PARA SUA MÃE.
+          </p>
+          <p class="text-sm text-gray-500">ID: JONATAN-DIGNITY-2025</p>
+        </div>
+
+        <!-- Hero Image Section -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600 text-center mb-4">
+            Sua ajuda pode mudar esta Vida!<br />Ajude a aliviar essa dor
+          </h2>
+          <div class="mt-6">
+            <img src="./images/image-01.png" alt="Jonatan trabalhando"
+              class="w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg mx-auto">
+          </div>
+        </div>
+
+        <!-- Doubled Donation Banner -->
+        <div class="bg-green-500 rounded-2xl p-6 sm:p-8 text-white text-center">
+          <h3 class="text-2xl sm:text-3xl font-bold mb-2">✨ DOAÇÃO DOBRADA! ✨</h3>
+          <p class="text-base sm:text-lg mb-2">Doações a partir de R$ 30 ou mais serão dobradas pelos nossos
+            patrocinadores!</p>
+          <p class="text-sm sm:text-base">Sua ajuda vale o dobro até 01/05.</p>
+        </div>
+
+        <!-- Donation Tiers -->
+        <div class="border-4 border-green-500 rounded-2xl p-6 sm:p-8">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-bullseye text-red-500 text-xl"></i>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900">DOAÇÕES A PARTIR DE R$ 30 SÃO DOBRADAS!</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Quando você doa R$ 30 ou mais, os patrocinadores dobram sua doação!</p>
+
+          <div class="bg-gray-50 rounded-lg p-4 sm:p-6 space-y-3 mb-6">
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 30</span> → <span class="font-bold text-green-600">R$ 60</span>
+            </div>
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 50</span> → <span class="font-bold text-green-600">R$ 100</span>
+            </div>
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 100</span> → <span class="font-bold text-green-600">R$ 200</span>
+            </div>
+          </div>
+
+          <div class="text-center mb-6">
+            <p class="text-red-600 font-bold flex items-center justify-center gap-2">
+              <i class="fas fa-fire"></i>
+              Oferta limitada até 01/05!
+            </p>
+          </div>
+
+          <button onclick="openDonationModal()"
+            class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors">
+            DOE AGORA E DOBRE SEU IMPACTO!
+          </button>
+        </div>
+
+        <!-- About Section -->
+        <div class="bg-white rounded-lg border border-gray-200">
+          <div class="border-b border-gray-200">
+            <div class="flex gap-4 sm:gap-8 px-4 sm:px-6">
+              <button class="py-4 border-b-2 border-green-500 text-green-600 font-semibold">Sobre</button>
+              <button class="py-4 text-gray-600 hover:text-gray-900">Atualizações</button>
+              <button class="py-4 text-gray-600 hover:text-gray-900">Quem ajudou</button>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-6 lg:p-8 space-y-6">
+            <div>
+              <p class="text-sm text-gray-500 mb-2">Campanha criada em: 28/12/2025</p>
+              <h3 class="text-xl font-bold mb-4">Jonatan tem 34 anos.</h3>
+              <p class="text-gray-700 leading-relaxed">Ele não tem pernas.</p>
+              <p class="text-gray-700 leading-relaxed mb-4">Ele perdeu um braço.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed mb-4">Mas todos os dias, ele acorda para trabalhar.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <p class="text-gray-700 leading-relaxed">
+                Arrastando um carrinho improvisado por uma estrada de terra, Jonatan carrega nas costas o que consegue
+                vender: galinhas, ovos, milho, leite.
+              </p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Ele não pede esmola.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Ele trabalha.</p>
+              <p class="text-gray-700 leading-relaxed mt-6">O dinheiro que ele ganha é pouco. Muito pouco.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Mas cada centavo tem um propósito claro:</p>
+              <ul class="list-none space-y-2 ml-4">
+                <li class="text-gray-700">tentar reconstruir suas pernas e usar prótese</li>
+                <li class="text-gray-700">comprar aparelhos auditivos para sua mãe, que perdeu a audição</li>
+              </ul>
+              <p class="text-gray-700 leading-relaxed mt-4">Jonatan vende barato porque no interior ninguém ganha muito.
+              </p>
+              <p class="text-gray-700 leading-relaxed">E ele não consegue chegar à cidade.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Mesmo assim, ele continua.</p>
+            </div>
+
+            <!-- Warning Box -->
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 sm:p-6 my-6">
+              <div class="flex items-center gap-2 mb-3">
+                <i class="fas fa-exclamation-triangle text-red-600"></i>
+                <h4 class="font-bold text-red-900">Sem ajuda, Jonatan corre risco constante:</h4>
+              </div>
+              <ul class="space-y-1 text-red-900">
+                <li>infecções no chão</li>
+                <li>dor crônica</li>
+                <li>quedas</li>
+                <li>piora da condição física</li>
+              </ul>
+            </div>
+
+            <!-- Success Box -->
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 sm:p-6">
+              <p class="text-green-900 flex items-start gap-2">
+                <span>👍</span>
+                <span class="font-semibold">Com ajuda, ele pode andar, trabalhar com dignidade e cuidar da mãe.</span>
+              </p>
+            </div>
+
+            <!-- Donation Breakdown -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 sm:p-6">
+              <h4 class="font-bold text-yellow-900 mb-4 flex items-center gap-2">
+                <span>🤝</span> Para onde vai sua doação?
+              </h4>
+              <p class="text-yellow-900 mb-4">Todos os fundos arrecadados irão para:</p>
+            </div>
+
+            <div class="space-y-3 ml-4">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Próteses e adaptação: R$ 25.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Cadeira de rodas adequada: R$ 5.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Aparelhos auditivos para a mãe: R$ 4.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Tratamentos, exames e transporte: R$ 3.000</span>
+              </div>
+            </div>
+
+            <div class="text-center my-8">
+              <div class="inline-flex items-center gap-2 text-red-600 font-bold text-xl">
+                <i class="fas fa-bullseye"></i>
+                <span>Meta: R$ 37.000</span>
+              </div>
+            </div>
+
+            <div class="text-center space-y-2 my-8">
+              <p class="text-green-600 font-bold text-lg flex items-center justify-center gap-2">
+                <span>👉</span> Doe agora.
+              </p>
+              <p class="text-gray-700">Pra você é pouco.</p>
+              <p class="text-green-600 font-bold text-xl">Pro Jonatan, é a chance de viver com dignidade.</p>
+            </div>
+
+            <!-- Quote -->
+            <div class="border-l-4 border-green-500 pl-6 py-4 my-8 bg-gray-50">
+              <p class="text-gray-700 italic text-lg leading-relaxed text-center">
+                "Deus não abandona quem trabalha com honestidade.<br />
+                Ele só escolhe pessoas pra ser o caminho."
+              </p>
+            </div>
+
+            <button onclick="openDonationModal()"
+              class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2">
+              <span>💚</span>
+              DOE AGORA — AJUDE O JONATAN
+            </button>
+          </div>
+        </div>
+
+        <!-- Recent Comments -->
+        <div class="bg-white rounded-lg border border-gray-200 p-4 sm:p-6 lg:p-8">
+          <h3 class="text-xl font-bold mb-6">Comentários recentes</h3>
+
+          <div class="space-y-6">
+            <!-- Comment 1 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0">
+                <img  class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0" src="./images/depoiment1 (2).jpg">
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Marcos T.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"Que história de força e determinação! Doei R$ 50. Que
+                  Jonatan consiga andar novamente e trabalhar com dignidade! 💚💪"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 3 minutos</p>
+              </div>
+            </div>
+
+            <!-- Comment 2 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0">
+                <img class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0" src="./images/depoiment1 (1).jpg">
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Sandra L.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"Doação feita! Admiro muito a força do Jonatan. Que ele
+                  consiga as próteses e possa trabalhar com dignidade! 🙏"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 7 minutos</p>
+              </div>
+            </div>
+
+            <!-- Comment 3 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0">
+                <img class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0" src="./images/depoiment1 (3).jpg">
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Roberto C.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"R$ 100 doados! Que o Jonatan consiga andar novamente e
+                  cuidar da mãe. Ele merece viver com dignidade! 💚"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 12 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Notice -->
+        <div class="text-xs text-gray-500 text-center py-4">
+          AVISO LEGAL: O texto e as imagens incluídos nesta página são de responsabilidade exclusiva do criador da
+          campanha e não representam a opinião ou endosso da plataforma.
+        </div>
+
+      </div>
+
+      <!-- Right Column - Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-24 space-y-6">
+
+          <!-- Donation Stats Card -->
+          <div class="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+
+            <!-- Animated Progress Bar -->
+            <div class="mb-4">
+              <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div class="h-full bg-green-500 rounded-full animate-progress" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Raised Amount -->
+            <div class="mb-6">
+              <p class="text-sm text-gray-600 mb-1">Arrecadado</p>
+              <p class="text-3xl sm:text-4xl font-bold text-green-600">R$ 11.492,00</p>
+            </div>
+
+            <!-- Goal -->
+            <div class="mb-4">
+              <p class="text-sm text-gray-600">Meta</p>
+              <p class="text-xl text-gray-700">R$ 37.000,00</p>
+            </div>
+
+            <!-- Supporters -->
+            <div class="mb-4">
+              <p class="text-sm text-gray-600">Apoiadores</p>
+              <p class="text-xl text-gray-700">47</p>
+            </div>
+
+            <!-- Urgency Counter -->
+            <div class="mb-6 bg-red-50 border border-red-200 rounded-lg p-3">
+              <p class="text-xs text-red-600 font-semibold flex items-center gap-2">
+                <i class="fas fa-clock"></i>
+                <span>5 pessoas doaram nas últimas 24h</span>
+              </p>
+            </div>
+
+            <!-- CTA Button -->
+            <button onclick="openDonationModal()" id="addToCartButton"
+              class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 mb-6">
+              <span>💚</span>
+              Ajude o Jonatan agora
+            </button>
+
+            <!-- Social Share Buttons -->
+            <div class="border-t border-gray-200 pt-4 mb-6">
+              <p class="text-sm text-gray-600 mb-3 text-center">Não pode doar? Compartilhe para ajudar!</p>
+              <div class="flex gap-2">
+                <button onclick="shareOnFacebook()"
+                  class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-facebook-f"></i>
+                  <span class="hidden sm:inline">Facebook</span>
+                </button>
+                <button onclick="shareOnWhatsApp()"
+                  class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-whatsapp"></i>
+                  <span class="hidden sm:inline">WhatsApp</span>
+                </button>
+                <button onclick="shareOnTwitter()"
+                  class="flex-1 bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-twitter"></i>
+                  <span class="hidden sm:inline">Twitter</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Organizer Info -->
+            <div class="border-t border-gray-200 pt-6">
+              <div class="flex items-start gap-3">
+                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-heart text-white text-xl"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4 class="font-bold text-gray-900 text-sm">Felipe Lins</h4>
+                  <p class="text-xs text-gray-600">Ativo na Vakinha desde 20/12/2025</p>
+                  <div class="flex gap-4 mt-2 text-xs">
+                    <div>
+                      <p class="font-semibold">8 campanhas</p>
+                      <p class="text-gray-600">criadas</p>
+                    </div>
+                    <div>
+                      <p class="font-semibold">2 campanhas</p>
+                      <p class="text-gray-600">apoiadas</p>
+                    </div>
+                  </div>
+                  <button class="text-blue-600 hover:text-blue-700 text-xs mt-2">Ler mais</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12 sm:mt-16 lg:mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+      <!-- Social Media Links -->
+      <div class="flex justify-center gap-6 mb-8 sm:mb-12">
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-facebook text-2xl"></i>
+        </a>
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-youtube text-2xl"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+
+        <!-- Column 1 -->
+        <div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-green-500 transition-colors">Criar campanhas</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Login</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Campanhas mais queridas</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Política de privacidade</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Termos de uso</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-green-500 transition-colors">Perguntas frequentes</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Taxas e prazos</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Loja de corações</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Vakinha Premium</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Blog Vakinha</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Segurança e transparência</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Buscar recibo</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-green-500 font-bold mb-4">Entre em contato</h3>
+          <p class="text-sm mb-6">Clique aqui para entrar em contato</p>
+
+          <h3 class="text-green-500 font-bold mb-4">Baixe nosso App</h3>
+          <div class="space-y-3">
+            <a href="#" class="block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Disponível no Google Play" class="h-10">
+            </a>
+            <a href="#" class="block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="Baixar na App Store" class="h-10">
+            </a>
+          </div>
+
+          <div class="mt-6">
+            <div class="bg-white rounded-lg p-3 inline-flex items-center gap-2">
+              <div class="w-8 h-8 bg-green-500 rounded-full"></div>
+              <div>
+                <p class="text-xs text-gray-600 leading-tight">SELO DE</p>
+                <p class="text-xs font-bold text-gray-900 leading-tight">SEGURANÇA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+        <p class="text-sm text-gray-400">© 2025 Vakinha Online. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Floating Donation Button -->
+  <div id="stickyButton" class="hidden fixed bottom-6 right-6 z-40">
+    <button onclick="openDonationModal()"
+      class="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full font-bold shadow-2xl transition-all hover:scale-105 flex items-center gap-2 fade-in-up">
+      <span>💚</span>
+      <span>Doar Agora</span>
+    </button>
+  </div>
+
+  <!-- Donation Modal -->
+  <div id="donationModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+      <!-- Close button -->
+      <button onclick="closeDonationModal()"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl z-10">
+        ×
+      </button>
+
+      <!-- Modal Content -->
+      <div class="p-6 sm:p-8">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl sm:text-3xl font-bold text-green-600 flex items-center justify-center gap-2 mb-2">
+            <span>💚</span> Ajude o Jonatan agora
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base">Jonatan trabalha todo dia rastejando. Ele precisa de próteses,
+            cadeira de rodas e aparelhos auditivos para sua mãe. Toda doação restaura dignidade.</p>
+        </div>
+
+        <!-- Improved donation grid layout with better responsive design -->
+        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+          <button onclick="selectAmount(10)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 10,00
+          </button>
+          <button onclick="selectAmount(15)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 15,00
+          </button>
+          <button onclick="selectAmount(30)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 30,00
+          </button>
+          <button onclick="selectAmount(50)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 50,00
+          </button>
+          <button onclick="selectAmount(70)" id="addToCartButton"
+            class="donation-btn col-span-2 bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold transition-all hover:scale-105 relative">
+            <span
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-xs px-3 py-1 rounded-full text-gray-900 font-semibold whitespace-nowrap">
+              ⭐ Mais escolhido e maior impacto!
+            </span>
+            R$ 70,00
+          </button>
+          <button onclick="selectAmount(150)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 150,00
+          </button>
+          <button onclick="selectAmount(200)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 200,00
+          </button>
+          <button onclick="selectAmount(300)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 300,00
+          </button>
+          <button onclick="selectAmount(500)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 500,00
+          </button>
+          <button onclick="selectAmount(700)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 700,00
+          </button>
+          <button onclick="selectAmount(1500)" id="addToCartButton"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 1.500,00
+          </button>
+          <button onclick="selectAmount(2000)"
+            class="donation-btn border-2 border-green-500 hover:bg-green-50 text-green-600 py-4 rounded-lg font-bold transition-all hover:scale-105">
+            R$ 2.000,00
+          </button>
+        </div>
+
+        <!-- Custom Amount Input
+        <div class="mt-6">
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Ou digite um valor personalizado:</label>
+          <div class="flex gap-2">
+            <div class="flex-1 relative">
+              <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 font-semibold">R$</span>
+              <input type="number" id="customAmount" placeholder="0,00" min="1" step="0.01"
+                class="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none">
+            </div>
+            <button onclick="selectCustomAmount()"
+              class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+              Confirmar
+            </button>
+          </div>
+        </div> -->
+
+        <!-- Impact Visualization Section -->
+        <div class="mt-8 bg-green-50 rounded-lg p-4">
+          <h3 class="font-bold text-green-900 mb-3 text-center">Veja o impacto da sua doação:</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 30</strong> = 1 consulta médica</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 70</strong> = Kit de curativos + transporte</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 150</strong> = Exames especializados</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 500+</strong> = Contribui significativamente para próteses</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <p class="text-xs text-gray-500">Pagamento 100% seguro e criptografado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- spinner -->
+  <!-- Spinner de carregamento (escondido inicialmente) -->
+  <div id="loadingSpinner" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+      <!-- Seu spinner SVG -->
+      <div role="status">
+        <svg aria-hidden="true" class="w-12 h-12 text-neutral-tertiary animate-spin fill-brand" viewBox="0 0 100 101"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="currentColor" />
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentFill" />
+        </svg>
+        <span class="sr-only">Loading...</span>
+      </div>
+
+      <!-- Texto opcional -->
+      <p class="mt-4 text-gray-700 font-medium">Gerando seu código PIX...</p>
+      <p class="text-sm text-gray-500">Isso pode levar alguns segundos</p>
+    </div>
+  </div>
+  <!-- pix modal -->
+
+  <!-- pix modal -->
+  <div id="pixModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+      <!-- Close button -->
+      <button onclick="closePixModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl z-10">
+        ×
+      </button>
+
+      <!-- Modal Content -->
+      <div class="p-6 sm:p-8">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl sm:text-3xl font-bold text-green-600 flex items-center justify-center gap-2 mb-2">
+            <span>💚</span> Doe via PIX
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base">Faça sua doação escaneando o QR Code ou copiando o código PIX
+          </p>
+        </div>
+
+        <!-- Valor da doação -->
+        <div class="text-center mb-8">
+          <p class="text-gray-600 mb-1">Valor da doação:</p>
+          <p class="text-3xl font-bold text-green-600">R$ <span id="pixAmount">0,00</span></p>
+        </div>
+
+        <!-- QR Code Container -->
+        <div class="mb-8">
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col items-center">
+            <p class="text-gray-600 mb-4 text-sm">Escaneie este QR Code com o app do seu banco:</p>
+            <div class="bg-white p-4 rounded-lg border border-gray-300">
+              <img id="pixQrCode" src="" alt="QR Code PIX" class="w-48 h-48 mx-auto">
+            </div>
+            <p id="pixExpires" class="text-sm text-gray-500 mt-4"></p>
+          </div>
+        </div>
+
+        <!-- Código PIX copiável -->
+        <div class="mb-8">
+          <label class="block text-sm font-semibold text-gray-700 mb-3">
+            Ou copie o código PIX abaixo:
+          </label>
+          <div class="flex gap-2">
+            <input type="text" id="pixCode" readonly
+              class="flex-1 border-2 border-gray-300 rounded-lg p-3 text-sm bg-gray-50 font-mono"
+              placeholder="Código PIX será gerado aqui...">
+            <button onclick="copyPixCode()"
+              class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-bold transition-colors whitespace-nowrap">
+              Copiar
+            </button>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Cole este código na área PIX do seu aplicativo bancário</p>
+        </div>
+
+        <!-- Instruções -->
+        <div class="bg-green-50 rounded-xl p-5 mb-6">
+          <h3 class="font-bold text-green-900 mb-3">Como pagar:</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <div
+                class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">
+                1</div>
+              <span class="text-gray-700">Abra o app do seu banco e acesse a área PIX</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div
+                class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">
+                2</div>
+              <span class="text-gray-700">Escaneie o QR Code ou cole o código PIX</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div
+                class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">
+                3</div>
+              <span class="text-gray-700">Confirme o valor e finalize a transação</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status da doação -->
+        <div class="text-center">
+          <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full mb-4">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-sm font-medium">Este PIX expira em 1 hora</span>
+          </div>
+          <p class="text-xs text-gray-500">Após o pagamento, você receberá uma confirmação por e-mail</p>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button onclick="closePixModal()"
+            class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-bold transition-colors">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal de agradecimento -->
+  <!-- Modal de Agradecimento (Obrigado) -->
+  <div id="thankYouModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto relative">
+      <!-- Close button -->
+      <button onclick="closeThankYouModal()"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl z-10">
+        ×
+      </button>
+
+      <!-- Modal Content -->
+      <div class="p-8 text-center">
+        <!-- Ícone de sucesso -->
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-bold text-green-600 mb-4">
+          Obrigado pela sua doação! 💚
+        </h2>
+
+        <p class="text-gray-600 mb-6">
+          Sua doação foi confirmada e fará uma grande diferença na vida do Jonatan.
+          Cada contribuição nos ajuda a fornecer próteses, cadeira de rodas e cuidados médicos.
+        </p>
+
+        <div class="bg-green-50 rounded-xl p-5 mb-6">
+          <h3 class="font-bold text-green-900 mb-3">Detalhes da doação:</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-gray-600">Valor:</span>
+              <span class="font-bold text-green-700" id="thankYouAmount">R$ 0,00</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Status:</span>
+              <span class="font-bold text-green-700">Pago com sucesso ✅</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Data:</span>
+              <span class="font-bold text-green-700" id="thankYouDate">-</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-gray-700 mb-3">
+            Você receberá um comprovante por e-mail em breve.
+          </p>
+          <p class="text-sm text-gray-500">
+            ID da transação: <span id="thankYouTransactionId" class="font-mono">-</span>
+          </p>
+        </div>
+
+        <!-- Compartilhar -->
+        <div class="mb-6">
+          <p class="text-gray-700 mb-3">Compartilhe esta causa:</p>
+          <div class="flex justify-center gap-3">
+            <button onclick="shareOnFacebook()"
+              class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </button>
+            <button onclick="shareOnWhatsApp()"
+              class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.893 0-3.18-1.24-6.162-3.495-8.411" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button onclick="closeThankYouModal()"
+          class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition-colors">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js">
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campanha para Jonatan - Ajude-o a Viver com Dignidade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Added animation for progress bar */
+    @keyframes fillProgress {
+      from { width: 0%; }
+      to { width: 31%; }
+    }
+    .animate-progress {
+      animation: fillProgress 2s ease-out forwards;
+    }
+    
+    /* Added smooth fade-in for sticky button */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.3s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="hidden sm:flex items-center gap-2 text-gray-700 hover:text-gray-900">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+          Criar Campanha
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+    
+    <!-- Breadcrumb -->
+    <div class="mb-4 text-sm text-blue-600">
+      Campanha para Jonatan
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+      
+      <!-- Left Column - Main Content -->
+      <div class="lg:col-span-2 space-y-6">
+        
+        <!-- Title Section -->
+        <div>
+          <p class="text-sm text-gray-600 mb-2 uppercase tracking-wide">CAMPANHA DE ARRECADAÇÃO DE FUNDOS PARA DOAÇÕES</p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-balance">
+            💪 Jonatan, 34 anos — Trabalha rastejando para não desistir da vida.
+          </h1>
+          <p class="text-base sm:text-lg text-gray-700 mb-2">
+            NECESSITA DE PRÓTESES, CADEIRA DE RODAS ADEQUADA E APARELHOS AUDITIVOS PARA SUA MÃE.
+          </p>
+          <p class="text-sm text-gray-500">ID: JONATAN-DIGNITY-2025</p>
+        </div>
+
+        <!-- Hero Image Section -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600 text-center mb-4">
+            Sua ajuda pode mudar esta Vida!<br/>Ajude a aliviar essa dor
+          </h2>
+          <div class="mt-6">
+            <img src="/images/jona-01.png" alt="Jonatan trabalhando" class="w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg mx-auto">
+          </div>
+        </div>
+
+        <!-- Doubled Donation Banner -->
+        <div class="bg-green-500 rounded-2xl p-6 sm:p-8 text-white text-center">
+          <h3 class="text-2xl sm:text-3xl font-bold mb-2">✨ DOAÇÃO DOBRADA! ✨</h3>
+          <p class="text-base sm:text-lg mb-2">Doações a partir de R$ 30 ou mais serão dobradas pelos nossos patrocinadores!</p>
+          <p class="text-sm sm:text-base">Sua ajuda vale o dobro até 01/05.</p>
+        </div>
+
+        <!-- Donation Tiers -->
+        <div class="border-4 border-green-500 rounded-2xl p-6 sm:p-8">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-bullseye text-red-500 text-xl"></i>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900">DOAÇÕES A PARTIR DE R$ 30 SÃO DOBRADAS!</h3>
+          </div>
+          <p class="text-gray-700 mb-6">Quando você doa R$ 30 ou mais, os patrocinadores dobram sua doação!</p>
+          
+          <div class="bg-gray-50 rounded-lg p-4 sm:p-6 space-y-3 mb-6">
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 30</span> → <span class="font-bold text-green-600">R$ 60</span>
+            </div>
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 50</span> → <span class="font-bold text-green-600">R$ 100</span>
+            </div>
+            <div class="text-center text-base sm:text-lg">
+              <span class="font-semibold">R$ 100</span> → <span class="font-bold text-green-600">R$ 200</span>
+            </div>
+          </div>
+
+          <div class="text-center mb-6">
+            <p class="text-red-600 font-bold flex items-center justify-center gap-2">
+              <i class="fas fa-fire"></i>
+              Oferta limitada até 01/05!
+            </p>
+          </div>
+
+          <button onclick="openDonationModal()" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors">
+            DOE AGORA E DOBRE SEU IMPACTO!
+          </button>
+        </div>
+
+        <!-- About Section -->
+        <div class="bg-white rounded-lg border border-gray-200">
+          <div class="border-b border-gray-200">
+            <div class="flex gap-4 sm:gap-8 px-4 sm:px-6">
+              <button class="py-4 border-b-2 border-green-500 text-green-600 font-semibold">Sobre</button>
+              <button class="py-4 text-gray-600 hover:text-gray-900">Atualizações</button>
+              <button class="py-4 text-gray-600 hover:text-gray-900">Quem ajudou</button>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-6 lg:p-8 space-y-6">
+            <div>
+              <p class="text-sm text-gray-500 mb-2">Campanha criada em: 28/12/2025</p>
+              <h3 class="text-xl font-bold mb-4">Jonatan tem 34 anos.</h3>
+              <p class="text-gray-700 leading-relaxed">Ele não tem pernas.</p>
+              <p class="text-gray-700 leading-relaxed mb-4">Ele perdeu um braço.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed mb-4">Mas todos os dias, ele acorda para trabalhar.</p>
+            </div>
+
+            <div class="space-y-4">
+              <p class="text-gray-700 leading-relaxed">
+                Arrastando um carrinho improvisado por uma estrada de terra, Jonatan carrega nas costas o que consegue vender: galinhas, ovos, milho, leite.
+              </p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Ele não pede esmola.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Ele trabalha.</p>
+              <p class="text-gray-700 leading-relaxed mt-6">O dinheiro que ele ganha é pouco. Muito pouco.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Mas cada centavo tem um propósito claro:</p>
+              <ul class="list-none space-y-2 ml-4">
+                <li class="text-gray-700">tentar reconstruir suas pernas e usar prótese</li>
+                <li class="text-gray-700">comprar aparelhos auditivos para sua mãe, que perdeu a audição</li>
+              </ul>
+              <p class="text-gray-700 leading-relaxed mt-4">Jonatan vende barato porque no interior ninguém ganha muito.</p>
+              <p class="text-gray-700 leading-relaxed">E ele não consegue chegar à cidade.</p>
+              <p class="text-gray-700 font-semibold leading-relaxed">Mesmo assim, ele continua.</p>
+            </div>
+
+            <!-- Warning Box -->
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 sm:p-6 my-6">
+              <div class="flex items-center gap-2 mb-3">
+                <i class="fas fa-exclamation-triangle text-red-600"></i>
+                <h4 class="font-bold text-red-900">Sem ajuda, Jonatan corre risco constante:</h4>
+              </div>
+              <ul class="space-y-1 text-red-900">
+                <li>infecções no chão</li>
+                <li>dor crônica</li>
+                <li>quedas</li>
+                <li>piora da condição física</li>
+              </ul>
+            </div>
+
+            <!-- Success Box -->
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 sm:p-6">
+              <p class="text-green-900 flex items-start gap-2">
+                <span>👍</span>
+                <span class="font-semibold">Com ajuda, ele pode andar, trabalhar com dignidade e cuidar da mãe.</span>
+              </p>
+            </div>
+
+            <!-- Donation Breakdown -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 sm:p-6">
+              <h4 class="font-bold text-yellow-900 mb-4 flex items-center gap-2">
+                <span>🤝</span> Para onde vai sua doação?
+              </h4>
+              <p class="text-yellow-900 mb-4">Todos os fundos arrecadados irão para:</p>
+            </div>
+
+            <div class="space-y-3 ml-4">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Próteses e adaptação: R$ 25.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Cadeira de rodas adequada: R$ 5.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Aparelhos auditivos para a mãe: R$ 4.000</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-green-600 mt-1"></i>
+                <span class="text-gray-700">Tratamentos, exames e transporte: R$ 3.000</span>
+              </div>
+            </div>
+
+            <div class="text-center my-8">
+              <div class="inline-flex items-center gap-2 text-red-600 font-bold text-xl">
+                <i class="fas fa-bullseye"></i>
+                <span>Meta: R$ 37.000</span>
+              </div>
+            </div>
+
+            <div class="text-center space-y-2 my-8">
+              <p class="text-green-600 font-bold text-lg flex items-center justify-center gap-2">
+                <span>👉</span> Doe agora.
+              </p>
+              <p class="text-gray-700">Pra você é pouco.</p>
+              <p class="text-green-600 font-bold text-xl">Pro Jonatan, é a chance de viver com dignidade.</p>
+            </div>
+
+            <!-- Quote -->
+            <div class="border-l-4 border-green-500 pl-6 py-4 my-8 bg-gray-50">
+              <p class="text-gray-700 italic text-lg leading-relaxed text-center">
+                "Deus não abandona quem trabalha com honestidade.<br/>
+                Ele só escolhe pessoas pra ser o caminho."
+              </p>
+            </div>
+
+            <button onclick="openDonationModal()" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2">
+              <span>💚</span>
+              DOE AGORA — AJUDE O JONATAN
+            </button>
+          </div>
+        </div>
+
+        <!-- Recent Comments -->
+        <div class="bg-white rounded-lg border border-gray-200 p-4 sm:p-6 lg:p-8">
+          <h3 class="text-xl font-bold mb-6">Comentários recentes</h3>
+          
+          <div class="space-y-6">
+            <!-- Comment 1 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0"></div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Marcos T.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"Que história de força e determinação! Doei R$ 50. Que Jonatan consiga andar novamente e trabalhar com dignidade! 💚💪"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 3 minutos</p>
+              </div>
+            </div>
+
+            <!-- Comment 2 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0"></div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Sandra L.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"Doação feita! Admiro muito a força do Jonatan. Que ele consiga as próteses e possa trabalhar com dignidade! 🙏"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 7 minutos</p>
+              </div>
+            </div>
+
+            <!-- Comment 3 -->
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex-shrink-0"></div>
+              <div class="flex-1">
+                <h4 class="font-bold text-gray-900">Roberto C.</h4>
+                <p class="text-gray-700 text-sm sm:text-base">"R$ 100 doados! Que o Jonatan consiga andar novamente e cuidar da mãe. Ele merece viver com dignidade! 💚"</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">há 12 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Notice -->
+        <div class="text-xs text-gray-500 text-center py-4">
+          AVISO LEGAL: O texto e as imagens incluídos nesta página são de responsabilidade exclusiva do criador da campanha e não representam a opinião ou endosso da plataforma.
+        </div>
+
+      </div>
+
+      <!-- Right Column - Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-24 space-y-6">
+          
+          <!-- Donation Stats Card -->
+          <div class="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+            
+            <!-- Animated Progress Bar -->
+            <div class="mb-4">
+              <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div class="h-full bg-green-500 rounded-full animate-progress" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Raised Amount -->
+            <div class="mb-6">
+              <p class="text-sm text-gray-600 mb-1">Arrecadado</p>
+              <p class="text-3xl sm:text-4xl font-bold text-green-600">R$ 11.492,00</p>
+            </div>
+
+            <!-- Goal -->
+            <div class="mb-4">
+              <p class="text-sm text-gray-600">Meta</p>
+              <p class="text-xl text-gray-700">R$ 37.000,00</p>
+            </div>
+
+            <!-- Supporters -->
+            <div class="mb-4">
+              <p class="text-sm text-gray-600">Apoiadores</p>
+              <p class="text-xl text-gray-700">47</p>
+            </div>
+
+            <!-- Urgency Counter -->
+            <div class="mb-6 bg-red-50 border border-red-200 rounded-lg p-3">
+              <p class="text-xs text-red-600 font-semibold flex items-center gap-2">
+                <i class="fas fa-clock"></i>
+                <span>5 pessoas doaram nas últimas 24h</span>
+              </p>
+            </div>
+
+            <!-- CTA Button -->
+            <button onclick="openDonationModal()" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 mb-6">
+              <span>💚</span>
+              Ajude o Jonatan agora
+            </button>
+
+            <!-- Social Share Buttons -->
+            <div class="border-t border-gray-200 pt-4 mb-6">
+              <p class="text-sm text-gray-600 mb-3 text-center">Não pode doar? Compartilhe para ajudar!</p>
+              <div class="flex gap-2">
+                <button onclick="shareOnFacebook()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-facebook-f"></i>
+                  <span class="hidden sm:inline">Facebook</span>
+                </button>
+                <button onclick="shareOnWhatsApp()" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-whatsapp"></i>
+                  <span class="hidden sm:inline">WhatsApp</span>
+                </button>
+                <button onclick="shareOnTwitter()" class="flex-1 bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2">
+                  <i class="fab fa-twitter"></i>
+                  <span class="hidden sm:inline">Twitter</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Organizer Info -->
+            <div class="border-t border-gray-200 pt-6">
+              <div class="flex items-start gap-3">
+                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-heart text-white text-xl"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4 class="font-bold text-gray-900 text-sm">Felipe Lins</h4>
+                  <p class="text-xs text-gray-600">Ativo na Vakinha desde 20/12/2025</p>
+                  <div class="flex gap-4 mt-2 text-xs">
+                    <div>
+                      <p class="font-semibold">8 campanhas</p>
+                      <p class="text-gray-600">criadas</p>
+                    </div>
+                    <div>
+                      <p class="font-semibold">2 campanhas</p>
+                      <p class="text-gray-600">apoiadas</p>
+                    </div>
+                  </div>
+                  <button class="text-blue-600 hover:text-blue-700 text-xs mt-2">Ler mais</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12 sm:mt-16 lg:mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      
+      <!-- Social Media Links -->
+      <div class="flex justify-center gap-6 mb-8 sm:mb-12">
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-facebook text-2xl"></i>
+        </a>
+        <a href="#" class="hover:text-green-500 transition-colors">
+          <i class="fab fa-youtube text-2xl"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+        
+        <!-- Column 1 -->
+        <div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-green-500 transition-colors">Criar campanhas</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Login</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Campanhas mais queridas</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Política de privacidade</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Termos de uso</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-green-500 transition-colors">Perguntas frequentes</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Taxas e prazos</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Loja de corações</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Vakinha Premium</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Blog Vakinha</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Segurança e transparência</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">Buscar recibo</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-green-500 font-bold mb-4">Entre em contato</h3>
+          <p class="text-sm mb-6">Clique aqui para entrar em contato</p>
+          
+          <h3 class="text-green-500 font-bold mb-4">Baixe nosso App</h3>
+          <div class="space-y-3">
+            <a href="#" class="block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play" class="h-10">
+            </a>
+            <a href="#" class="block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Baixar na App Store" class="h-10">
+            </a>
+          </div>
+
+          <div class="mt-6">
+            <div class="bg-white rounded-lg p-3 inline-flex items-center gap-2">
+              <div class="w-8 h-8 bg-green-500 rounded-full"></div>
+              <div>
+                <p class="text-xs text-gray-600 leading-tight">SELO DE</p>
+                <p class="text-xs font-bold text-gray-900 leading-tight">SEGURANÇA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+        <p class="text-sm text-gray-400">© 2025 Vakinha Online. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Floating Donation Button -->
+  <div id="stickyButton" class="hidden fixed bottom-6 right-6 z-40">
+    <button onclick="openDonationModal()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full font-bold shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-2 fade-in-up">
+      <span>💚</span>
+      <span>Doar Agora</span>
+    </button>
+  </div>
+
+  <!-- Donation Modal -->
+  <div id="donationModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto relative">
+      <!-- Close button -->
+      <button onclick="closeDonationModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl z-10">
+        ×
+      </button>
+      
+      <!-- PIX Key Section -->
+      <div class="p-6 sm:p-8">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl sm:text-3xl font-bold text-green-600 flex items-center justify-center gap-2 mb-2">
+            <span>💚</span> Ajude o Jonatan agora
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base">Jonatan trabalha todo dia rastejando. Ele precisa de próteses, cadeira de rodas e aparelhos auditivos para sua mãe. Toda doação restaura dignidade.</p>
+        </div>
+
+        <!-- PIX Key Display -->
+        <div class="bg-green-50 rounded-xl p-6 mb-6 border-2 border-green-200">
+          <div class="text-center mb-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-3">
+              <i class="fas fa-qrcode text-white text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Chave PIX</h3>
+            <p class="text-sm text-gray-600 mb-4">Copie a chave PIX abaixo e faça sua doação</p>
+          </div>
+
+          <!-- PIX Key Display -->
+          <div class="bg-white rounded-lg p-4 mb-4 border-2 border-dashed border-green-300">
+            <p class="text-center text-gray-900 font-mono text-sm sm:text-base break-all" id="pixKey">
+              jonatan.ajuda@email.com
+            </p>
+          </div>
+
+          <!-- Copy PIX Button -->
+          <button onclick="copyPixKey()" id="copyButton" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <i class="fas fa-copy"></i>
+            <span id="copyButtonText">Copiar Chave PIX e Ajudar</span>
+          </button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="bg-blue-50 rounded-lg p-4 mb-4">
+          <h4 class="font-bold text-blue-900 mb-2 flex items-center gap-2">
+            <i class="fas fa-info-circle"></i>
+            Como doar via PIX:
+          </h4>
+          <ol class="space-y-2 text-sm text-blue-900 ml-5 list-decimal">
+            <li>Copie a chave PIX acima</li>
+            <li>Abra o app do seu banco</li>
+            <li>Acesse a área PIX</li>
+            <li>Cole a chave e escolha o valor</li>
+            <li>Confirme a transferência</li>
+          </ol>
+        </div>
+
+        <!-- Impact Visualization Section -->
+        <div class="bg-green-50 rounded-lg p-4">
+          <h3 class="font-bold text-green-900 mb-3 text-center">Veja o impacto da sua doação:</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 30</strong> = 1 consulta médica</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 70</strong> = Kit de curativos + transporte</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 150</strong> = Exames especializados</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-600"></i>
+              <span class="text-gray-700"><strong>R$ 500+</strong> = Contribui significativamente para próteses</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <p class="text-xs text-gray-500">PIX 100% seguro e instantâneo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let lastScrollTop = 0;
+    const stickyButton = document.getElementById('stickyButton');
+    
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 800) {
+        stickyButton.classList.remove('hidden');
+      } else {
+        stickyButton.classList.add('hidden');
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+
+    // Modal functions
+    function openDonationModal() {
+      document.getElementById('donationModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDonationModal() {
+      document.getElementById('donationModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on backdrop click
+    document.getElementById('donationModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeDonationModal();
+      }
+    });
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeDonationModal();
+      }
+    });
+
+    // Donation amount selection
+    function copyPixKey() {
+      const pixKey = document.getElementById('pixKey').textContent.trim();
+      const copyButton = document.getElementById('copyButton');
+      const copyButtonText = document.getElementById('copyButtonText');
+      
+      // Copy to clipboard
+      navigator.clipboard.writeText(pixKey).then(function() {
+        // Update button appearance
+        copyButton.classList.remove('bg-green-500', 'hover:bg-green-600');
+        copyButton.classList.add('bg-blue-600', 'hover:bg-blue-700');
+        copyButtonText.innerHTML = '<i class="fas fa-check"></i> Chave PIX Copiada!';
+        
+        // Reset button after 3 seconds
+        setTimeout(function() {
+          copyButton.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+          copyButton.classList.add('bg-green-500', 'hover:bg-green-600');
+          copyButtonText.innerHTML = '<i class="fas fa-copy"></i> Copiar Chave PIX e Ajudar';
+        }, 3000);
+      }).catch(function(err) {
+        alert('Erro ao copiar: ' + err);
+      });
+    }
+
+    function shareOnFacebook() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+    }
+
+    function shareOnWhatsApp() {
+      const text = encodeURIComponent('Ajude o Jonatan a viver com dignidade! Ele trabalha rastejando todos os dias e precisa de próteses.');
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+    }
+
+    function shareOnTwitter() {
+      const text = encodeURIComponent('Ajude o Jonatan a viver com dignidade!');
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'width=600,height=400');
+    }
+  </script>
+
+</body>
+</html>
